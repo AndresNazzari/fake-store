@@ -1,0 +1,28 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-bottom: 2rem;
+
+        .card__img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        .card__detail {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                max-height: 150px;
+                overflow: auto;
+            }
+        }
+    }
+}

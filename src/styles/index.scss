@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+//font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+//font-family: 'Nunito', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+//font-family: 'Poppins', sans-serif;
+
+@import url('./components/Header.scss');
+@import url('./components/CartWidget.scss');
+@import url('./components/ItemCount.scss');
+@import url('./components/ItemDetail.scss');
+@import url('./components/ItemList.scss');
+@import url('./components/Cart.scss');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+    }
+}
+
+main {
+    border-top: solid 2px rgba(194, 194, 194, 0.418);
+}

@@ -9,11 +9,11 @@ const CartItem = ({ item, removeFromCart }) => {
 					<p className='modal_item_title '>{item.name}</p>
 					<div className='modal_item_prices'>
 						<p className='modal_item_price'>
-							{numeral(item.price/*  * item.discount */).format('$0,0.00')} x{' '}
+							{numeral(item.price).format('$0,0.00')} x{' '}
 							{item.qty}
 						</p>
 						<p className='modal_item_total'>
-							{numeral(item.price /* * item.discount  */ * item.qty).format('$0,0.00')}
+							{numeral(item.price * item.qty).format('$0,0.00')}
 						</p>
 					</div>
 				</div>
